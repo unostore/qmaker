@@ -1,0 +1,1061 @@
+[*] Starting node3 node
+[*] geth --verbosity 6 --datadir qdata --raft --nodiscover --networkid 36657 --rpc --rpcaddr 0.0.0.0 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum,raft --emitcheckpoints --raftport 22003 --rpcport 22000 --port 22001 --nat extip:10.50.0.4
+TRACE[07-21|17:47:17] Started watching keystore folder         path=/node3/node/qdata/keystore
+DEBUG[07-21|17:47:17] FS scan times                            list=37.341µs set=3.657µs diff=154.058µs
+TRACE[07-21|17:47:17] Handled keystore changes                 time=53.055µs
+INFO [07-21|17:47:17] Starting peer-to-peer node               instance=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2
+INFO [07-21|17:47:17] Allocated cache and file handles         database=/node3/node/qdata/geth/chaindata cache=128 handles=1024
+DEBUG[07-21|17:47:17] FS scan times                            list=44.504µs set=3.934µs diff=4.476µs
+TRACE[07-21|17:47:17] Handled keystore changes                 time=1.081µs
+WARN [07-21|17:47:17] Upgrading database to use lookup entries 
+INFO [07-21|17:47:17] Initialised chain configuration          config="{ChainID: 36657 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: <nil> IsQuorum: true Engine: unknown}"
+INFO [07-21|17:47:17] Disk storage enabled for ethash caches   dir=/node3/node/qdata/geth/ethash count=3
+INFO [07-21|17:47:17] Disk storage enabled for ethash DAGs     dir=/root/.ethash                 count=2
+INFO [07-21|17:47:17] Initialising Ethereum protocol           versions="[63 62]" network=36657
+INFO [07-21|17:47:17] Database deduplication successful        deduped=0
+INFO [07-21|17:47:17] Loaded most recent local header          number=0 hash=4a64c2…4d0e46 td=0
+INFO [07-21|17:47:17] Loaded most recent local full block      number=0 hash=4a64c2…4d0e46 td=0
+INFO [07-21|17:47:17] Loaded most recent local fast block      number=0 hash=4a64c2…4d0e46 td=0
+DEBUG[07-21|17:47:17] Reinjecting stale transactions           count=0
+INFO [07-21|17:47:17] Regenerated local transaction journal    transactions=0 accounts=0
+DEBUG[07-21|17:47:17] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [07-21|17:47:17] Starting P2P networking 
+INFO [07-21|17:47:17] starting raft protocol handler 
+INFO [07-21|17:47:17] RLPx listener up                         self="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@[::]:22001?discport=0"
+INFO [07-21|17:47:17] loaded the latest applied index          lastAppliedIndex=0
+INFO [07-21|17:47:17] replaying WAL 
+TRACE[07-21|17:47:17] New dial task                            task="staticdial b4572b6f876765e2 10.50.0.2:22001"
+TRACE[07-21|17:47:17] New dial task                            task="staticdial da81682458cb46e7 10.50.0.3:22001"
+TRACE[07-21|17:47:17] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:47:17] Accepted connection                      addr=10.50.0.4:49888
+INFO [07-21|17:47:17] loading WAL                              term=0 index=0
+INFO [07-21|17:47:17] startRaft                                raft ID=3
+INFO [07-21|17:47:17] starting a new raft log                  initial cluster size of=3
+2018-07-21 17:47:17.979871 I | rafthttp: starting peer 1...
+2018-07-21 17:47:17.979895 I | rafthttp: started HTTP pipelining with peer 1
+TRACE[07-21|17:47:17] Dial error                               task="staticdial b4572b6f876765e2 10.50.0.2:22001" err="dial tcp 10.50.0.2:22001: connect: connection refused"
+DEBUG[07-21|17:47:17] Can't resolve node                       id=b4572b6f876765e2 err="discovery is disabled"
+2018-07-21 17:47:17.983283 I | rafthttp: started peer 1
+2018-07-21 17:47:17.983306 I | rafthttp: added peer 1
+TRACE[07-21|17:47:17] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://da81682458cb46e7b572446bd62921f7cdc9b16f1fa63f51891204194bc50b438b6c0340e8ea5e039656f5ddb45028d306b1609f442337c15417610c84777417@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=da81682458cb46e7 Connection String=da81682458cb46e7b572446bd62921f7cdc9b16f1fa63f51891204194bc50b438b6c0340e8ea5e039656f5ddb45028d306b1609f442337c15417610c84777417
+TRACE[07-21|17:47:17] Node Permissioning is Disabled. 
+DEBUG[07-21|17:47:17] Adding static node                       node="enode://b4572b6f876765e222b7bf3db2736e61176c2d63104c165de309f48ec716365af191e5e6e860a978788259f0e8b9261a2a7584d2f810b0b2b9434c855494744f@10.50.0.2:22001?discport=0"
+TRACE[07-21|17:47:17] Dial task done                           task="staticdial b4572b6f876765e2 10.50.0.2:22001"
+DEBUG[07-21|17:47:17] Adding static node                       node="enode://da81682458cb46e7b572446bd62921f7cdc9b16f1fa63f51891204194bc50b438b6c0340e8ea5e039656f5ddb45028d306b1609f442337c15417610c84777417@10.50.0.3:22001?discport=0"
+2018-07-21 17:47:17.984255 I | rafthttp: started streaming with peer 1 (writer)
+2018-07-21 17:47:17.984302 I | rafthttp: started streaming with peer 1 (writer)
+2018-07-21 17:47:17.984340 I | rafthttp: started streaming with peer 1 (stream MsgApp v2 reader)
+TRACE[07-21|17:47:17] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:47:17] Node Permissioning is Disabled. 
+TRACE[07-21|17:47:17] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:47:17] Node Permissioning is Disabled. 
+2018-07-21 17:47:17.985861 I | rafthttp: started streaming with peer 1 (stream Message reader)
+2018-07-21 17:47:17.986051 I | rafthttp: starting peer 2...
+2018-07-21 17:47:17.986081 I | rafthttp: started HTTP pipelining with peer 2
+2018-07-21 17:47:17.987407 I | rafthttp: started peer 2
+2018-07-21 17:47:17.987422 I | rafthttp: added peer 2
+raft2018/07/21 17:47:17 INFO: 3 became follower at term 0
+raft2018/07/21 17:47:17 INFO: newRaft 3 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+raft2018/07/21 17:47:17 INFO: 3 became follower at term 1
+DEBUG[07-21|17:47:17] InProc registered *node.PrivateAdminAPI under 'admin' 
+DEBUG[07-21|17:47:17] InProc registered *node.PublicAdminAPI under 'admin' 
+DEBUG[07-21|17:47:17] InProc registered *debug.HandlerT under 'debug' 
+DEBUG[07-21|17:47:17] InProc registered *node.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] InProc registered *node.PublicWeb3API under 'web3' 
+DEBUG[07-21|17:47:17] InProc registered *raft.PublicRaftAPI under 'raft' 
+DEBUG[07-21|17:47:17] InProc registered *ethapi.PublicEthereumAPI under 'eth' 
+DEBUG[07-21|17:47:17] InProc registered *ethapi.PublicBlockChainAPI under 'eth' 
+DEBUG[07-21|17:47:17] InProc registered *ethapi.PublicTransactionPoolAPI under 'eth' 
+DEBUG[07-21|17:47:17] InProc registered *ethapi.PublicTxPoolAPI under 'txpool' 
+DEBUG[07-21|17:47:17] InProc registered *ethapi.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] InProc registered *ethapi.PrivateDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] InProc registered *ethapi.PublicAccountAPI under 'eth' 
+DEBUG[07-21|17:47:17] InProc registered *ethapi.PrivateAccountAPI under 'personal' 
+DEBUG[07-21|17:47:17] InProc registered *eth.PublicEthereumAPI under 'eth' 
+DEBUG[07-21|17:47:17] InProc registered *eth.PublicMinerAPI under 'eth' 
+DEBUG[07-21|17:47:17] InProc registered *downloader.PublicDownloaderAPI under 'eth' 
+DEBUG[07-21|17:47:17] InProc registered *eth.PrivateMinerAPI under 'miner' 
+DEBUG[07-21|17:47:17] InProc registered *filters.PublicFilterAPI under 'eth' 
+DEBUG[07-21|17:47:17] InProc registered *eth.PrivateAdminAPI under 'admin' 
+DEBUG[07-21|17:47:17] InProc registered *eth.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] InProc registered *eth.PrivateDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] InProc registered *ethapi.PublicNetAPI under 'net' 
+DEBUG[07-21|17:47:17] IPC registered *node.PrivateAdminAPI under 'admin' 
+DEBUG[07-21|17:47:17] IPC registered *node.PublicAdminAPI under 'admin' 
+DEBUG[07-21|17:47:17] IPC registered *debug.HandlerT under 'debug' 
+DEBUG[07-21|17:47:17] IPC registered *node.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] IPC registered *node.PublicWeb3API under 'web3' 
+DEBUG[07-21|17:47:17] IPC registered *raft.PublicRaftAPI under 'raft' 
+DEBUG[07-21|17:47:17] IPC registered *ethapi.PublicEthereumAPI under 'eth' 
+DEBUG[07-21|17:47:17] IPC registered *ethapi.PublicBlockChainAPI under 'eth' 
+DEBUG[07-21|17:47:17] IPC registered *ethapi.PublicTransactionPoolAPI under 'eth' 
+DEBUG[07-21|17:47:17] IPC registered *ethapi.PublicTxPoolAPI under 'txpool' 
+DEBUG[07-21|17:47:17] IPC registered *ethapi.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] IPC registered *ethapi.PrivateDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] IPC registered *ethapi.PublicAccountAPI under 'eth' 
+DEBUG[07-21|17:47:17] IPC registered *ethapi.PrivateAccountAPI under 'personal' 
+DEBUG[07-21|17:47:17] IPC registered *eth.PublicEthereumAPI under 'eth' 
+DEBUG[07-21|17:47:17] IPC registered *eth.PublicMinerAPI under 'eth' 
+DEBUG[07-21|17:47:17] IPC registered *downloader.PublicDownloaderAPI under 'eth' 
+DEBUG[07-21|17:47:17] IPC registered *eth.PrivateMinerAPI under 'miner' 
+DEBUG[07-21|17:47:17] IPC registered *filters.PublicFilterAPI under 'eth' 
+DEBUG[07-21|17:47:17] IPC registered *eth.PrivateAdminAPI under 'admin' 
+DEBUG[07-21|17:47:17] IPC registered *eth.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] IPC registered *eth.PrivateDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] IPC registered *ethapi.PublicNetAPI under 'net' 
+DEBUG[07-21|17:47:17] HTTP registered *node.PrivateAdminAPI under 'admin' 
+DEBUG[07-21|17:47:17] HTTP registered *node.PublicAdminAPI under 'admin' 
+DEBUG[07-21|17:47:17] HTTP registered *debug.HandlerT under 'debug' 
+DEBUG[07-21|17:47:17] HTTP registered *node.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] HTTP registered *node.PublicWeb3API under 'web3' 
+DEBUG[07-21|17:47:17] HTTP registered *raft.PublicRaftAPI under 'raft' 
+DEBUG[07-21|17:47:17] HTTP registered *ethapi.PublicEthereumAPI under 'eth' 
+DEBUG[07-21|17:47:17] HTTP registered *ethapi.PublicBlockChainAPI under 'eth' 
+DEBUG[07-21|17:47:17] HTTP registered *ethapi.PublicTransactionPoolAPI under 'eth' 
+DEBUG[07-21|17:47:17] HTTP registered *ethapi.PublicTxPoolAPI under 'txpool' 
+DEBUG[07-21|17:47:17] HTTP registered *ethapi.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] HTTP registered *ethapi.PrivateDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] HTTP registered *ethapi.PublicAccountAPI under 'eth' 
+DEBUG[07-21|17:47:17] HTTP registered *ethapi.PrivateAccountAPI under 'personal' 
+DEBUG[07-21|17:47:17] HTTP registered *eth.PublicEthereumAPI under 'eth' 
+DEBUG[07-21|17:47:17] HTTP registered *eth.PublicMinerAPI under 'eth' 
+DEBUG[07-21|17:47:17] HTTP registered *downloader.PublicDownloaderAPI under 'eth' 
+DEBUG[07-21|17:47:17] HTTP registered *eth.PrivateMinerAPI under 'miner' 
+DEBUG[07-21|17:47:17] HTTP registered *filters.PublicFilterAPI under 'eth' 
+DEBUG[07-21|17:47:17] HTTP registered *eth.PrivateAdminAPI under 'admin' 
+DEBUG[07-21|17:47:17] HTTP registered *eth.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] Adding p2p peer                          id=da81682458cb46e7 name=Geth/v1.7.2-stable-d... addr=10.50.0.3:22001 peers=1
+2018-07-21 17:47:17.990020 I | rafthttp: started streaming with peer 2 (writer)
+2018-07-21 17:47:17.990034 I | rafthttp: started streaming with peer 2 (writer)
+2018-07-21 17:47:17.990054 I | rafthttp: started streaming with peer 2 (stream MsgApp v2 reader)
+TRACE[07-21|17:47:17] Starting protocol eth/63                 id=da81682458cb46e7 conn=staticdial
+DEBUG[07-21|17:47:17] Ethereum peer connected                  id=da81682458cb46e7 conn=staticdial name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2
+TRACE[07-21|17:47:17] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:49888 conn=inbound    err="connected to self"
+2018-07-21 17:47:17.990366 I | rafthttp: started streaming with peer 2 (stream Message reader)
+TRACE[07-21|17:47:17] Dial task done                           task="staticdial da81682458cb46e7 10.50.0.3:22001"
+TRACE[07-21|17:47:17] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:47:17] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:47:17] New dial task                            task="wait for dial hist expire (29.993213647s)"
+DEBUG[07-21|17:47:17] HTTP registered *eth.PrivateDebugAPI under 'debug' 
+DEBUG[07-21|17:47:17] HTTP registered *ethapi.PublicNetAPI under 'net' 
+INFO [07-21|17:47:17] HTTP endpoint opened: http://0.0.0.0:22000 
+DEBUG[07-21|17:47:17] Allowed origin(s) for WS RPC interface [*]
+ 
+INFO [07-21|17:47:17] WebSocket endpoint opened: ws://[::]:22005 
+TRACE[07-21|17:47:17] Registering sync peer                    peer=da81682458cb46e7
+INFO [07-21|17:47:17] IPC endpoint opened: /node3/node/qdata/geth.ipc 
+INFO [07-21|17:47:17] ignoring expected ConfChangeAddNode for initial peer raft id=1
+INFO [07-21|17:47:17] start snapshot                           applied index=0 last snapshot index=0
+2018-07-21 17:47:17.992340 I | rafthttp: peer 2 became active
+2018-07-21 17:47:17.992352 I | rafthttp: established a TCP streaming connection with peer 2 (stream MsgApp v2 reader)
+2018-07-21 17:47:17.992991 I | rafthttp: established a TCP streaming connection with peer 2 (stream Message reader)
+DEBUG[07-21|17:47:17] Executing EVM call finished              runtime=283.443µs
+DEBUG[07-21|17:47:17] Release oracle not found                 contract=0xFA7B9770Ca4cb04296Cac84F37736d4041251CDF
+INFO [07-21|17:47:17] compacted log                            index=0
+INFO [07-21|17:47:17] persisted the latest applied index       index=1
+INFO [07-21|17:47:17] ignoring expected ConfChangeAddNode for initial peer raft id=2
+INFO [07-21|17:47:17] start snapshot                           applied index=1 last snapshot index=1
+INFO [07-21|17:47:17] compacted log                            index=1
+INFO [07-21|17:47:17] persisted the latest applied index       index=2
+INFO [07-21|17:47:17] ignoring expected ConfChangeAddNode for initial peer raft id=3
+INFO [07-21|17:47:17] start snapshot                           applied index=2 last snapshot index=2
+INFO [07-21|17:47:17] compacted log                            index=2
+INFO [07-21|17:47:17] persisted the latest applied index       index=3
+2018-07-21 17:47:18.045430 I | rafthttp: established a TCP streaming connection with peer 2 (stream Message writer)
+2018-07-21 17:47:18.045529 I | rafthttp: established a TCP streaming connection with peer 2 (stream MsgApp v2 writer)
+TRACE[07-21|17:47:18] Accepted connection                      addr=10.50.0.2:41842
+TRACE[07-21|17:47:18] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=b4572b6f876765e2 Connection String=b4572b6f876765e222b7bf3db2736e61176c2d63104c165de309f48ec716365af191e5e6e860a978788259f0e8b9261a2a7584d2f810b0b2b9434c855494744f
+TRACE[07-21|17:47:18] Node Permissioning is Disabled. 
+DEBUG[07-21|17:47:18] Adding p2p peer                          id=b4572b6f876765e2 name=Geth/v1.7.2-stable-d...                          addr=10.50.0.2:41842 peers=2
+TRACE[07-21|17:47:18] Starting protocol eth/63                 id=b4572b6f876765e2 conn=inbound
+DEBUG[07-21|17:47:18] Ethereum peer connected                  id=b4572b6f876765e2 conn=inbound    name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2
+TRACE[07-21|17:47:18] Registering sync peer                    peer=b4572b6f876765e2
+DEBUG[07-21|17:47:18] Relaxed downloader QoS values            rtt=20s confidence=0.500 ttl=1m0s
+2018-07-21 17:47:18.955664 I | rafthttp: peer 1 became active
+2018-07-21 17:47:18.955686 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message writer)
+2018-07-21 17:47:18.956646 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 writer)
+2018-07-21 17:47:18.991833 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message reader)
+2018-07-21 17:47:18.996504 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 reader)
+raft2018/07/21 17:47:19 INFO: 3 [term: 1] received a MsgVote message with higher term from 2 [term: 2]
+raft2018/07/21 17:47:19 INFO: 3 became follower at term 2
+raft2018/07/21 17:47:19 INFO: 3 [logterm: 1, index: 3, vote: 0] cast MsgVote for 2 [logterm: 1, index: 3] at term 2
+raft2018/07/21 17:47:19 INFO: raft.node: 3 elected leader 2 at term 2
+INFO [07-21|17:47:19] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+INFO [07-21|17:47:19] persisted the latest applied index       index=4
+DEBUG[07-21|17:47:20] Couldn't add port mapping                proto=tcp extport=22001 intport=22001 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
+TRACE[07-21|17:47:23] Pooled new future transaction            hash=c93683…c6bb64 from=0x16c99a33fCe0256Cf9bfB2F0334F020c9A6C1404 to=nil
+TRACE[07-21|17:47:23] Promoting queued transaction             hash=c93683…c6bb64
+TRACE[07-21|17:47:23] Broadcast transaction                    hash=c93683…c6bb64 recipients=1
+TRACE[07-21|17:47:23] Discarding already known transaction     hash=c93683…c6bb64
+INFO [07-21|17:47:23] QUORUM-CHECKPOINT                        name=TX-ACCEPTED                                      tx=0xc93683fc338a5cd967ebd3ad902fd84e8fe1c535e7dd003752c1182049c6bb64
+TRACE[07-21|17:47:23] Requiring new ethash cache               epoch=0
+TRACE[07-21|17:47:23] Requiring new future ethash cache        epoch=1
+DEBUG[07-21|17:47:23] Failed to load old ethash cache          epoch=0 err="open /node3/node/qdata/geth/ethash/cache-R23-0000000000000000: no such file or directory"
+DEBUG[07-21|17:47:25] Transaction pool status report           executable=1 queued=0 stales=0
+INFO [07-21|17:47:26] Generating ethash verification cache     epoch=0 percentage=63 elapsed=3.009s
+INFO [07-21|17:47:27] Generated ethash verification cache      epoch=0 elapsed=3.928s
+DEBUG[07-21|17:47:27] Failed to load old ethash cache          epoch=1 err="open /node3/node/qdata/geth/ethash/cache-R23-290decd9548b62a8: no such file or directory"
+DEBUG[07-21|17:47:27] Trie cache stats after commit            misses=10 unloads=0
+DEBUG[07-21|17:47:27] Trie cache stats after commit            misses=10 unloads=0
+DEBUG[07-21|17:47:27] Inserted new block                       number=1 hash=320232…bb9361 uncles=0 txs=1 gas=2283437 elapsed=3.951s
+INFO [07-21|17:47:27] Imported new chain segment               blocks=1 txs=1 mgas=2.283 elapsed=3.951s mgasps=0.578 number=1 hash=320232…bb9361
+INFO [07-21|17:47:27] QUORUM-CHECKPOINT                        name=BLOCK-CREATED                                    block=32023261691ae1b24045a8dc797d44486e33e0b146ed5067c1d90faa1fbb9361
+INFO [07-21|17:47:27] persisted the latest applied index       index=5
+DEBUG[07-21|17:47:27] Reinjecting stale transactions           count=0
+TRACE[07-21|17:47:27] Removed old pending transaction          hash=c93683…c6bb64
+DEBUG[07-21|17:47:29] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[07-21|17:47:29] Executing EVM call finished              runtime=650.982µs
+TRACE[07-21|17:47:32] Pooled new future transaction            hash=991c2d…6f1d81 from=0x16c99a33fCe0256Cf9bfB2F0334F020c9A6C1404 to=0x48387e07E8E668d93FD8a906420e51253D9DE737
+TRACE[07-21|17:47:32] Promoting queued transaction             hash=991c2d…6f1d81
+INFO [07-21|17:47:32] Generating ethash verification cache     epoch=1 percentage=56 elapsed=5.581s
+raft2018/07/21 17:47:32 INFO: 3 [term: 2] received a MsgVote message with higher term from 1 [term: 3]
+raft2018/07/21 17:47:32 INFO: 3 became follower at term 3
+raft2018/07/21 17:47:32 INFO: 3 [logterm: 2, index: 5, vote: 0] cast MsgVote for 1 [logterm: 2, index: 5] at term 3
+raft2018/07/21 17:47:32 INFO: raft.node: 3 lost leader 2 at term 3
+TRACE[07-21|17:47:32] Broadcast transaction                    hash=991c2d…6f1d81 recipients=1
+raft2018/07/21 17:47:32 INFO: 3 [term: 3] ignored a MsgHeartbeat message with lower term from 2 [term: 2]
+raft2018/07/21 17:47:32 INFO: 3 [term: 3] ignored a MsgHeartbeat message with lower term from 2 [term: 2]
+raft2018/07/21 17:47:32 INFO: 3 [term: 3] ignored a MsgHeartbeat message with lower term from 2 [term: 2]
+INFO [07-21|17:47:32] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+raft2018/07/21 17:47:33 INFO: raft.node: 3 elected leader 1 at term 3
+INFO [07-21|17:47:33] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+INFO [07-21|17:47:33] persisted the latest applied index       index=6
+INFO [07-21|17:47:33] QUORUM-CHECKPOINT                        name=TX-ACCEPTED                                      tx=0x991c2d4ae6006471d0a62a629e2505f21ec5d861d75e121dd7b5e751f36f1d81
+DEBUG[07-21|17:47:33] Trie cache stats after commit            misses=11 unloads=0
+DEBUG[07-21|17:47:33] Trie cache stats after commit            misses=11 unloads=0
+DEBUG[07-21|17:47:33] Inserted new block                       number=2 hash=45fb2d…25c2d1 uncles=0 txs=1 gas=299190  elapsed=6.793ms
+INFO [07-21|17:47:33] Imported new chain segment               blocks=1 txs=1 mgas=0.299 elapsed=6.837ms mgasps=43.758 number=2 hash=45fb2d…25c2d1
+INFO [07-21|17:47:33] QUORUM-CHECKPOINT                        name=BLOCK-CREATED                                    block=45fb2d3b94669a05f07885eb4cba84856dec9f7970784babaaf68fff7525c2d1
+INFO [07-21|17:47:33] persisted the latest applied index       index=7
+DEBUG[07-21|17:47:33] Reinjecting stale transactions           count=0
+TRACE[07-21|17:47:33] Removed old pending transaction          hash=991c2d…6f1d81
+DEBUG[07-21|17:47:34] Transaction pool status report           executable=0 queued=0 stales=0
+TRACE[07-21|17:47:34] Discarding invalid transaction           hash=991c2d…6f1d81 err="nonce too low"
+raft2018/07/21 17:47:34 INFO: 3 [term: 3] ignored a MsgApp message with lower term from 2 [term: 2]
+raft2018/07/21 17:47:34 INFO: 3 [term: 3] ignored a MsgHeartbeat message with lower term from 2 [term: 2]
+INFO [07-21|17:47:36] Generating ethash verification cache     epoch=1 percentage=77 elapsed=8.967s
+TRACE[07-21|17:47:36] Pooled new future transaction            hash=1a8dbb…62bfa8 from=0x48A08A18AA2EC589af50114c0daC17BD65EA5902 to=0x48387e07E8E668d93FD8a906420e51253D9DE737
+TRACE[07-21|17:47:36] Promoting queued transaction             hash=1a8dbb…62bfa8
+INFO [07-21|17:47:36] Submitted transaction                    fullhash=0x1a8dbbc54bca403b67f64459ea76c40a4534e7589ad7ea4799c8b4dbd662bfa8 recipient=0x48387e07E8E668d93FD8a906420e51253D9DE737
+INFO [07-21|17:47:36] QUORUM-CHECKPOINT                        name=TX-CREATED                                       tx=0x1a8dbbc54bca403b67f64459ea76c40a4534e7589ad7ea4799c8b4dbd662bfa8 to=0x48387e07E8E668d93FD8a906420e51253D9DE737
+TRACE[07-21|17:47:36] Broadcast transaction                    hash=1a8dbb…62bfa8 recipients=2
+INFO [07-21|17:47:36] QUORUM-CHECKPOINT                        name=TX-ACCEPTED                                      tx=0x1a8dbbc54bca403b67f64459ea76c40a4534e7589ad7ea4799c8b4dbd662bfa8
+DEBUG[07-21|17:47:36] Trie cache stats after commit            misses=18 unloads=0
+DEBUG[07-21|17:47:36] Trie cache stats after commit            misses=18 unloads=0
+DEBUG[07-21|17:47:36] Inserted new block                       number=3 hash=b7a425…eaf844 uncles=0 txs=1 gas=284190  elapsed=29.155ms
+INFO [07-21|17:47:36] Imported new chain segment               blocks=1 txs=1 mgas=0.284 elapsed=29.199ms mgasps=9.733  number=3 hash=b7a425…eaf844
+INFO [07-21|17:47:36] QUORUM-CHECKPOINT                        name=BLOCK-CREATED                                    block=b7a4256f1d6dcadf6fa218df2bce9a76301b536807737fbc5e5f2bcdfaeaf844
+INFO [07-21|17:47:36] persisted the latest applied index       index=8
+DEBUG[07-21|17:47:36] Reinjecting stale transactions           count=0
+TRACE[07-21|17:47:36] Removed old pending transaction          hash=1a8dbb…62bfa8
+TRACE[07-21|17:47:37] Pooled new future transaction            hash=962ef5…e0221f from=0x9Fd6a1B2556284ea34C551185c42bC7F022B7E8b to=0x48387e07E8E668d93FD8a906420e51253D9DE737
+TRACE[07-21|17:47:37] Promoting queued transaction             hash=962ef5…e0221f
+TRACE[07-21|17:47:37] Broadcast transaction                    hash=962ef5…e0221f recipients=1
+INFO [07-21|17:47:37] QUORUM-CHECKPOINT                        name=TX-ACCEPTED                                      tx=0x962ef52dd5f8627d1202be09274d857e9e84531aa43f5b7b3ed974e3bde0221f
+DEBUG[07-21|17:47:37] Trie cache stats after commit            misses=27 unloads=0
+DEBUG[07-21|17:47:37] Trie cache stats after commit            misses=27 unloads=1
+DEBUG[07-21|17:47:37] Inserted new block                       number=4 hash=899496…c1866c uncles=0 txs=1 gas=284190  elapsed=44.497ms
+INFO [07-21|17:47:37] Imported new chain segment               blocks=1 txs=1 mgas=0.284 elapsed=44.541ms mgasps=6.380  number=4 hash=899496…c1866c
+INFO [07-21|17:47:37] QUORUM-CHECKPOINT                        name=BLOCK-CREATED                                    block=89949676adb2040b6e1d68e1ec65e824bfb2d3cc97c0bfab2b6b62060fc1866c
+INFO [07-21|17:47:37] persisted the latest applied index       index=9
+DEBUG[07-21|17:47:37] Reinjecting stale transactions           count=0
+TRACE[07-21|17:47:37] Removed old pending transaction          hash=962ef5…e0221f
+INFO [07-21|17:47:37] Generated ethash verification cache      epoch=1 elapsed=10.706s
+DEBUG[07-21|17:47:37] Recalculated downloader QoS values       rtt=20s confidence=0.750 ttl=1m0s
+TRACE[07-21|17:47:47] Dial task done                           task="wait for dial hist expire (29.993213647s)"
+TRACE[07-21|17:47:47] New dial task                            task="wait for dial hist expire (6.345499ms)"
+TRACE[07-21|17:47:47] Dial task done                           task="wait for dial hist expire (6.345499ms)"
+TRACE[07-21|17:47:47] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:47:47] Accepted connection                      addr=10.50.0.4:50040
+TRACE[07-21|17:47:47] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:47:47] Node Permissioning is Disabled. 
+TRACE[07-21|17:47:47] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50040 conn=inbound    err="connected to self"
+TRACE[07-21|17:47:47] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:47:47] Node Permissioning is Disabled. 
+TRACE[07-21|17:47:47] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:47:47] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:47:47] New dial task                            task="wait for dial hist expire (29.999997951s)"
+DEBUG[07-21|17:47:57] Recalculated downloader QoS values       rtt=20s confidence=0.875 ttl=1m0s
+DEBUG[07-21|17:48:17] Recalculated downloader QoS values       rtt=20s confidence=0.938 ttl=1m0s
+TRACE[07-21|17:48:17] Dial task done                           task="wait for dial hist expire (29.999997951s)"
+TRACE[07-21|17:48:17] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:48:17] Accepted connection                      addr=10.50.0.4:50048
+TRACE[07-21|17:48:17] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:48:17] Node Permissioning is Disabled. 
+TRACE[07-21|17:48:17] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:48:17] Node Permissioning is Disabled. 
+TRACE[07-21|17:48:17] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:48:17] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:48:17] New dial task                            task="wait for dial hist expire (29.999997923s)"
+TRACE[07-21|17:48:17] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50048 conn=inbound    err="connected to self"
+DEBUG[07-21|17:48:37] Recalculated downloader QoS values       rtt=20s confidence=0.969 ttl=1m0s
+TRACE[07-21|17:48:47] Dial task done                           task="wait for dial hist expire (29.999997923s)"
+TRACE[07-21|17:48:47] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:48:47] Accepted connection                      addr=10.50.0.4:50054
+TRACE[07-21|17:48:48] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:48:48] Node Permissioning is Disabled. 
+TRACE[07-21|17:48:48] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50054 conn=inbound    err="connected to self"
+TRACE[07-21|17:48:48] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:48:48] Node Permissioning is Disabled. 
+TRACE[07-21|17:48:48] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:48:48] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:48:48] New dial task                            task="wait for dial hist expire (29.99999766s)"
+DEBUG[07-21|17:48:57] Recalculated downloader QoS values       rtt=20s confidence=0.984 ttl=1m0s
+DEBUG[07-21|17:49:17] Recalculated downloader QoS values       rtt=20s confidence=0.992 ttl=1m0s
+TRACE[07-21|17:49:18] Dial task done                           task="wait for dial hist expire (29.99999766s)"
+TRACE[07-21|17:49:18] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:49:18] Accepted connection                      addr=10.50.0.4:50060
+TRACE[07-21|17:49:18] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:49:18] Node Permissioning is Disabled. 
+TRACE[07-21|17:49:18] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50060 conn=inbound    err="connected to self"
+TRACE[07-21|17:49:18] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:49:18] Node Permissioning is Disabled. 
+TRACE[07-21|17:49:18] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:49:18] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:49:18] New dial task                            task="wait for dial hist expire (29.999997401s)"
+DEBUG[07-21|17:49:37] Recalculated downloader QoS values       rtt=20s confidence=0.996 ttl=1m0s
+TRACE[07-21|17:49:48] Dial task done                           task="wait for dial hist expire (29.999997401s)"
+TRACE[07-21|17:49:48] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:49:48] Accepted connection                      addr=10.50.0.4:50066
+TRACE[07-21|17:49:48] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:49:48] Node Permissioning is Disabled. 
+TRACE[07-21|17:49:48] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50066 conn=inbound    err="connected to self"
+TRACE[07-21|17:49:48] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:49:48] Node Permissioning is Disabled. 
+TRACE[07-21|17:49:48] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:49:48] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:49:48] New dial task                            task="wait for dial hist expire (29.999997393s)"
+DEBUG[07-21|17:49:57] Recalculated downloader QoS values       rtt=20s confidence=0.998 ttl=1m0s
+DEBUG[07-21|17:50:17] Recalculated downloader QoS values       rtt=20s confidence=0.999 ttl=1m0s
+TRACE[07-21|17:50:18] Dial task done                           task="wait for dial hist expire (29.999997393s)"
+TRACE[07-21|17:50:18] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:50:18] Accepted connection                      addr=10.50.0.4:50072
+TRACE[07-21|17:50:18] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:50:18] Node Permissioning is Disabled. 
+TRACE[07-21|17:50:18] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50072 conn=inbound    err="connected to self"
+TRACE[07-21|17:50:18] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:50:18] Node Permissioning is Disabled. 
+TRACE[07-21|17:50:18] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:50:18] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:50:18] New dial task                            task="wait for dial hist expire (29.999996647s)"
+DEBUG[07-21|17:50:37] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+[*] Starting node3 node
+[*] geth --verbosity 6 --datadir qdata --raft --nodiscover --networkid 36657 --rpc --rpcaddr 0.0.0.0 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum,raft --emitcheckpoints --raftport 22003 --rpcport 22000 --port 22001 --nat extip:10.50.0.4
+TRACE[07-21|17:55:58] Started watching keystore folder         path=/node3/node/qdata/keystore
+DEBUG[07-21|17:55:58] FS scan times                            list=42.022µs set=177.204µs diff=4.431µs
+TRACE[07-21|17:55:58] Handled keystore changes                 time=63.158µs
+INFO [07-21|17:55:58] Starting peer-to-peer node               instance=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2
+INFO [07-21|17:55:58] Allocated cache and file handles         database=/node3/node/qdata/geth/chaindata cache=128 handles=1024
+DEBUG[07-21|17:55:58] FS scan times                            list=321.082µs set=5.633µs   diff=7.59µs
+TRACE[07-21|17:55:58] Handled keystore changes                 time=1.675µs
+INFO [07-21|17:55:58] Initialised chain configuration          config="{ChainID: 36657 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: <nil> IsQuorum: true Engine: unknown}"
+INFO [07-21|17:55:58] Disk storage enabled for ethash caches   dir=/node3/node/qdata/geth/ethash count=3
+INFO [07-21|17:55:58] Disk storage enabled for ethash DAGs     dir=/root/.ethash                 count=2
+INFO [07-21|17:55:58] Initialising Ethereum protocol           versions="[63 62]" network=36657
+INFO [07-21|17:55:58] Loaded most recent local header          number=4 hash=899496…c1866c td=524288
+INFO [07-21|17:55:58] Loaded most recent local full block      number=4 hash=899496…c1866c td=524288
+INFO [07-21|17:55:58] Loaded most recent local fast block      number=4 hash=899496…c1866c td=524288
+DEBUG[07-21|17:55:58] Reinjecting stale transactions           count=0
+TRACE[07-21|17:55:58] Discarding invalid transaction           hash=1a8dbb…62bfa8 err="nonce too low"
+DEBUG[07-21|17:55:58] Failed to add journaled transaction      err="nonce too low"
+INFO [07-21|17:55:58] Loaded local transaction journal         transactions=1 dropped=1
+INFO [07-21|17:55:58] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [07-21|17:55:58] Blockchain not empty, fast sync disabled 
+DEBUG[07-21|17:55:58] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [07-21|17:55:58] Starting P2P networking 
+INFO [07-21|17:55:58] starting raft protocol handler 
+INFO [07-21|17:55:58] loaded the latest applied index          lastAppliedIndex=9
+INFO [07-21|17:55:58] loading snapshot 
+INFO [07-21|17:55:58] applying snapshot to raft storage 
+TRACE[07-21|17:55:58] New dial task                            task="staticdial b4572b6f876765e2 10.50.0.2:22001"
+TRACE[07-21|17:55:58] New dial task                            task="staticdial da81682458cb46e7 10.50.0.3:22001"
+TRACE[07-21|17:55:58] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+INFO [07-21|17:55:58] updating cluster membership per raft snapshot 
+INFO [07-21|17:55:58] adding new raft peer                     raft id=1
+2018-07-21 17:55:58.544633 I | rafthttp: starting peer 1...
+2018-07-21 17:55:58.544660 I | rafthttp: started HTTP pipelining with peer 1
+DEBUG[07-21|17:55:58] Adding static node                       node="enode://b4572b6f876765e222b7bf3db2736e61176c2d63104c165de309f48ec716365af191e5e6e860a978788259f0e8b9261a2a7584d2f810b0b2b9434c855494744f@10.50.0.2:22001?discport=0"
+INFO [07-21|17:55:58] RLPx listener up                         self="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@[::]:22001?discport=0"
+TRACE[07-21|17:55:58] Accepted connection                      addr=10.50.0.4:50082
+TRACE[07-21|17:55:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:55:58] Node Permissioning is Disabled. 
+TRACE[07-21|17:55:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50082 conn=inbound err="connected to self"
+2018-07-21 17:55:58.549340 I | rafthttp: started peer 1
+2018-07-21 17:55:58.549364 I | rafthttp: added peer 1
+INFO [07-21|17:55:58] adding new raft peer                     raft id=2
+2018-07-21 17:55:58.549399 I | rafthttp: starting peer 2...
+2018-07-21 17:55:58.549417 I | rafthttp: started HTTP pipelining with peer 2
+TRACE[07-21|17:55:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:55:58] Node Permissioning is Disabled. 
+TRACE[07-21|17:55:58] Dial error                               task="staticdial da81682458cb46e7 10.50.0.3:22001" err="dial tcp 10.50.0.3:22001: connect: connection refused"
+DEBUG[07-21|17:55:58] Can't resolve node                       id=da81682458cb46e7 err="discovery is disabled"
+TRACE[07-21|17:55:58] Dial error                               task="staticdial b4572b6f876765e2 10.50.0.2:22001" err="dial tcp 10.50.0.2:22001: connect: connection refused"
+DEBUG[07-21|17:55:58] Can't resolve node                       id=b4572b6f876765e2 err="discovery is disabled"
+2018-07-21 17:55:58.550834 I | rafthttp: started streaming with peer 1 (stream MsgApp v2 reader)
+2018-07-21 17:55:58.551016 I | rafthttp: started peer 2
+2018-07-21 17:55:58.551034 I | rafthttp: started streaming with peer 1 (writer)
+2018-07-21 17:55:58.551048 I | rafthttp: added peer 2
+2018-07-21 17:55:58.551059 I | rafthttp: started streaming with peer 1 (stream Message reader)
+INFO [07-21|17:55:58] updated cluster membership 
+INFO [07-21|17:55:58] blockchain is caught up; no need to synchronize 
+INFO [07-21|17:55:58] replaying WAL 
+INFO [07-21|17:55:58] loading WAL                              term=0 index=0
+DEBUG[07-21|17:55:58] Adding static node                       node="enode://da81682458cb46e7b572446bd62921f7cdc9b16f1fa63f51891204194bc50b438b6c0340e8ea5e039656f5ddb45028d306b1609f442337c15417610c84777417@10.50.0.3:22001?discport=0"
+TRACE[07-21|17:55:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:55:58] Dial task done                           task="staticdial da81682458cb46e7 10.50.0.3:22001"
+TRACE[07-21|17:55:58] Dial task done                           task="staticdial b4572b6f876765e2 10.50.0.2:22001"
+TRACE[07-21|17:55:58] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:55:58] New dial task                            task="wait for dial hist expire (29.999964629s)"
+2018-07-21 17:55:58.552017 I | rafthttp: started streaming with peer 2 (writer)
+2018-07-21 17:55:58.552033 I | rafthttp: started streaming with peer 2 (writer)
+2018-07-21 17:55:58.552054 I | rafthttp: started streaming with peer 2 (stream MsgApp v2 reader)
+2018-07-21 17:55:58.552211 I | rafthttp: started streaming with peer 2 (stream Message reader)
+2018-07-21 17:55:58.552364 I | rafthttp: started streaming with peer 1 (writer)
+INFO [07-21|17:55:58] rolling back applied index to last-durably-committed last applied index=9 last persisted index=8
+INFO [07-21|17:55:58] startRaft                                raft ID=3
+INFO [07-21|17:55:58] remounting an existing raft log; connecting to peers. 
+raft2018/07/21 17:55:58 INFO: 3 became follower at term 3
+raft2018/07/21 17:55:58 INFO: newRaft 3 [peers: [1,2,3], term: 3, commit: 8, applied: 8, lastindex: 9, lastterm: 3]
+DEBUG[07-21|17:55:58] InProc registered *node.PrivateAdminAPI under 'admin' 
+DEBUG[07-21|17:55:58] InProc registered *node.PublicAdminAPI under 'admin' 
+DEBUG[07-21|17:55:58] InProc registered *debug.HandlerT under 'debug' 
+DEBUG[07-21|17:55:58] InProc registered *node.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] InProc registered *node.PublicWeb3API under 'web3' 
+DEBUG[07-21|17:55:58] InProc registered *raft.PublicRaftAPI under 'raft' 
+DEBUG[07-21|17:55:58] InProc registered *ethapi.PublicEthereumAPI under 'eth' 
+DEBUG[07-21|17:55:58] InProc registered *ethapi.PublicBlockChainAPI under 'eth' 
+DEBUG[07-21|17:55:58] InProc registered *ethapi.PublicTransactionPoolAPI under 'eth' 
+DEBUG[07-21|17:55:58] InProc registered *ethapi.PublicTxPoolAPI under 'txpool' 
+DEBUG[07-21|17:55:58] InProc registered *ethapi.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] InProc registered *ethapi.PrivateDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] InProc registered *ethapi.PublicAccountAPI under 'eth' 
+DEBUG[07-21|17:55:58] Executing EVM call finished              runtime=316.605µs
+DEBUG[07-21|17:55:58] Release oracle not found                 contract=0xFA7B9770Ca4cb04296Cac84F37736d4041251CDF
+DEBUG[07-21|17:55:58] InProc registered *ethapi.PrivateAccountAPI under 'personal' 
+DEBUG[07-21|17:55:58] InProc registered *eth.PublicEthereumAPI under 'eth' 
+DEBUG[07-21|17:55:58] InProc registered *eth.PublicMinerAPI under 'eth' 
+DEBUG[07-21|17:55:58] InProc registered *downloader.PublicDownloaderAPI under 'eth' 
+DEBUG[07-21|17:55:58] InProc registered *eth.PrivateMinerAPI under 'miner' 
+DEBUG[07-21|17:55:58] InProc registered *filters.PublicFilterAPI under 'eth' 
+DEBUG[07-21|17:55:58] InProc registered *eth.PrivateAdminAPI under 'admin' 
+DEBUG[07-21|17:55:58] InProc registered *eth.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] InProc registered *eth.PrivateDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] InProc registered *ethapi.PublicNetAPI under 'net' 
+DEBUG[07-21|17:55:58] IPC registered *node.PrivateAdminAPI under 'admin' 
+DEBUG[07-21|17:55:58] IPC registered *node.PublicAdminAPI under 'admin' 
+DEBUG[07-21|17:55:58] IPC registered *debug.HandlerT under 'debug' 
+DEBUG[07-21|17:55:58] IPC registered *node.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] IPC registered *node.PublicWeb3API under 'web3' 
+DEBUG[07-21|17:55:58] IPC registered *raft.PublicRaftAPI under 'raft' 
+DEBUG[07-21|17:55:58] IPC registered *ethapi.PublicEthereumAPI under 'eth' 
+DEBUG[07-21|17:55:58] IPC registered *ethapi.PublicBlockChainAPI under 'eth' 
+DEBUG[07-21|17:55:58] IPC registered *ethapi.PublicTransactionPoolAPI under 'eth' 
+DEBUG[07-21|17:55:58] IPC registered *ethapi.PublicTxPoolAPI under 'txpool' 
+DEBUG[07-21|17:55:58] IPC registered *ethapi.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] IPC registered *ethapi.PrivateDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] IPC registered *ethapi.PublicAccountAPI under 'eth' 
+DEBUG[07-21|17:55:58] IPC registered *ethapi.PrivateAccountAPI under 'personal' 
+DEBUG[07-21|17:55:58] IPC registered *eth.PublicEthereumAPI under 'eth' 
+DEBUG[07-21|17:55:58] IPC registered *eth.PublicMinerAPI under 'eth' 
+DEBUG[07-21|17:55:58] IPC registered *downloader.PublicDownloaderAPI under 'eth' 
+DEBUG[07-21|17:55:58] IPC registered *eth.PrivateMinerAPI under 'miner' 
+DEBUG[07-21|17:55:58] IPC registered *filters.PublicFilterAPI under 'eth' 
+DEBUG[07-21|17:55:58] IPC registered *eth.PrivateAdminAPI under 'admin' 
+DEBUG[07-21|17:55:58] IPC registered *eth.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] IPC registered *eth.PrivateDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] IPC registered *ethapi.PublicNetAPI under 'net' 
+DEBUG[07-21|17:55:58] HTTP registered *node.PrivateAdminAPI under 'admin' 
+DEBUG[07-21|17:55:58] HTTP registered *node.PublicAdminAPI under 'admin' 
+INFO [07-21|17:55:58] IPC endpoint opened: /node3/node/qdata/geth.ipc 
+DEBUG[07-21|17:55:58] HTTP registered *debug.HandlerT under 'debug' 
+DEBUG[07-21|17:55:58] HTTP registered *node.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] HTTP registered *node.PublicWeb3API under 'web3' 
+DEBUG[07-21|17:55:58] HTTP registered *raft.PublicRaftAPI under 'raft' 
+DEBUG[07-21|17:55:58] HTTP registered *ethapi.PublicEthereumAPI under 'eth' 
+DEBUG[07-21|17:55:58] HTTP registered *ethapi.PublicBlockChainAPI under 'eth' 
+DEBUG[07-21|17:55:58] HTTP registered *ethapi.PublicTransactionPoolAPI under 'eth' 
+DEBUG[07-21|17:55:58] HTTP registered *ethapi.PublicTxPoolAPI under 'txpool' 
+DEBUG[07-21|17:55:58] HTTP registered *ethapi.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] HTTP registered *ethapi.PrivateDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] HTTP registered *ethapi.PublicAccountAPI under 'eth' 
+DEBUG[07-21|17:55:58] HTTP registered *ethapi.PrivateAccountAPI under 'personal' 
+DEBUG[07-21|17:55:58] HTTP registered *eth.PublicEthereumAPI under 'eth' 
+DEBUG[07-21|17:55:58] HTTP registered *eth.PublicMinerAPI under 'eth' 
+DEBUG[07-21|17:55:58] HTTP registered *downloader.PublicDownloaderAPI under 'eth' 
+DEBUG[07-21|17:55:58] HTTP registered *eth.PrivateMinerAPI under 'miner' 
+DEBUG[07-21|17:55:58] HTTP registered *filters.PublicFilterAPI under 'eth' 
+DEBUG[07-21|17:55:58] HTTP registered *eth.PrivateAdminAPI under 'admin' 
+DEBUG[07-21|17:55:58] HTTP registered *eth.PublicDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] HTTP registered *eth.PrivateDebugAPI under 'debug' 
+DEBUG[07-21|17:55:58] HTTP registered *ethapi.PublicNetAPI under 'net' 
+INFO [07-21|17:55:58] HTTP endpoint opened: http://0.0.0.0:22000 
+DEBUG[07-21|17:55:58] Allowed origin(s) for WS RPC interface [*]
+ 
+INFO [07-21|17:55:58] WebSocket endpoint opened: ws://[::]:22005 
+TRACE[07-21|17:55:58] Accepted connection                      addr=10.50.0.2:41968
+TRACE[07-21|17:55:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=b4572b6f876765e2 Connection String=b4572b6f876765e222b7bf3db2736e61176c2d63104c165de309f48ec716365af191e5e6e860a978788259f0e8b9261a2a7584d2f810b0b2b9434c855494744f
+TRACE[07-21|17:55:58] Node Permissioning is Disabled. 
+DEBUG[07-21|17:55:58] Adding p2p peer                          id=b4572b6f876765e2 name=Geth/v1.7.2-stable-d... addr=10.50.0.2:41968 peers=1
+TRACE[07-21|17:55:58] Starting protocol eth/63                 id=b4572b6f876765e2 conn=inbound
+DEBUG[07-21|17:55:58] Ethereum peer connected                  id=b4572b6f876765e2 conn=inbound    name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2
+TRACE[07-21|17:55:58] Registering sync peer                    peer=b4572b6f876765e2
+2018-07-21 17:55:58.667497 I | rafthttp: peer 1 became active
+2018-07-21 17:55:58.667516 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message writer)
+2018-07-21 17:55:58.668587 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 writer)
+2018-07-21 17:55:58.754114 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 reader)
+2018-07-21 17:55:58.755886 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message reader)
+TRACE[07-21|17:55:59] Accepted connection                      addr=10.50.0.3:43434
+2018-07-21 17:55:59.516231 I | rafthttp: peer 2 became active
+2018-07-21 17:55:59.516254 I | rafthttp: established a TCP streaming connection with peer 2 (stream Message writer)
+2018-07-21 17:55:59.516368 I | rafthttp: established a TCP streaming connection with peer 2 (stream MsgApp v2 writer)
+TRACE[07-21|17:55:59] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=da81682458cb46e7 Connection String=da81682458cb46e7b572446bd62921f7cdc9b16f1fa63f51891204194bc50b438b6c0340e8ea5e039656f5ddb45028d306b1609f442337c15417610c84777417
+TRACE[07-21|17:55:59] Node Permissioning is Disabled. 
+DEBUG[07-21|17:55:59] Adding p2p peer                          id=da81682458cb46e7 name=Geth/v1.7.2-stable-d...                          addr=10.50.0.3:43434 peers=2
+TRACE[07-21|17:55:59] Starting protocol eth/63                 id=da81682458cb46e7 conn=inbound
+DEBUG[07-21|17:55:59] Ethereum peer connected                  id=da81682458cb46e7 conn=inbound    name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2
+TRACE[07-21|17:55:59] Registering sync peer                    peer=da81682458cb46e7
+DEBUG[07-21|17:55:59] Relaxed downloader QoS values            rtt=20s confidence=0.500 ttl=1m0s
+2018-07-21 17:55:59.557831 I | rafthttp: established a TCP streaming connection with peer 2 (stream Message reader)
+2018-07-21 17:55:59.557884 I | rafthttp: established a TCP streaming connection with peer 2 (stream MsgApp v2 reader)
+raft2018/07/21 17:56:00 INFO: 3 is starting a new election at term 3
+raft2018/07/21 17:56:00 INFO: 3 became candidate at term 4
+raft2018/07/21 17:56:00 INFO: 3 received MsgVoteResp from 3 at term 4
+raft2018/07/21 17:56:00 INFO: 3 [logterm: 3, index: 9] sent MsgVote request to 1 at term 4
+raft2018/07/21 17:56:00 INFO: 3 [logterm: 3, index: 9] sent MsgVote request to 2 at term 4
+raft2018/07/21 17:56:00 INFO: 3 received MsgVoteResp from 2 at term 4
+raft2018/07/21 17:56:00 INFO: 3 [quorum:2] has received 2 MsgVoteResp votes and 0 vote rejections
+raft2018/07/21 17:56:00 INFO: 3 became leader at term 4
+raft2018/07/21 17:56:00 INFO: raft.node: 3 elected leader 3 at term 4
+INFO [07-21|17:56:00] QUORUM-CHECKPOINT                        name=BECAME-MINTER
+INFO [07-21|17:56:00] Not minting a new block since there are no pending transactions 
+INFO [07-21|17:56:00] persisted the latest applied index       index=10
+DEBUG[07-21|17:56:00] Couldn't add port mapping                proto=tcp extport=22001 intport=22001 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
+DEBUG[07-21|17:56:18] Recalculated downloader QoS values       rtt=20s confidence=0.750 ttl=1m0s
+TRACE[07-21|17:56:28] Dial task done                           task="wait for dial hist expire (29.999964629s)"
+TRACE[07-21|17:56:28] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:56:28] Accepted connection                      addr=10.50.0.4:50248
+TRACE[07-21|17:56:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:56:28] Node Permissioning is Disabled. 
+TRACE[07-21|17:56:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50248 conn=inbound    err="connected to self"
+TRACE[07-21|17:56:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:56:28] Node Permissioning is Disabled. 
+TRACE[07-21|17:56:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:56:28] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:56:28] New dial task                            task="wait for dial hist expire (29.999997768s)"
+DEBUG[07-21|17:56:38] Recalculated downloader QoS values       rtt=20s confidence=0.875 ttl=1m0s
+DEBUG[07-21|17:56:58] Recalculated downloader QoS values       rtt=20s confidence=0.938 ttl=1m0s
+TRACE[07-21|17:56:58] Dial task done                           task="wait for dial hist expire (29.999997768s)"
+TRACE[07-21|17:56:58] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:56:58] Accepted connection                      addr=10.50.0.4:50254
+TRACE[07-21|17:56:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:56:58] Node Permissioning is Disabled. 
+TRACE[07-21|17:56:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50254 conn=inbound    err="connected to self"
+TRACE[07-21|17:56:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:56:58] Node Permissioning is Disabled. 
+TRACE[07-21|17:56:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:56:58] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:56:58] New dial task                            task="wait for dial hist expire (29.99999786s)"
+DEBUG[07-21|17:57:18] Recalculated downloader QoS values       rtt=20s confidence=0.969 ttl=1m0s
+TRACE[07-21|17:57:28] Dial task done                           task="wait for dial hist expire (29.99999786s)"
+TRACE[07-21|17:57:28] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:57:28] Accepted connection                      addr=10.50.0.4:50260
+TRACE[07-21|17:57:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:57:28] Node Permissioning is Disabled. 
+TRACE[07-21|17:57:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50260 conn=inbound    err="connected to self"
+TRACE[07-21|17:57:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:57:28] Node Permissioning is Disabled. 
+TRACE[07-21|17:57:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:57:28] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:57:28] New dial task                            task="wait for dial hist expire (29.99999725s)"
+DEBUG[07-21|17:57:38] Recalculated downloader QoS values       rtt=20s confidence=0.984 ttl=1m0s
+DEBUG[07-21|17:57:58] Recalculated downloader QoS values       rtt=20s confidence=0.992 ttl=1m0s
+TRACE[07-21|17:57:58] Dial task done                           task="wait for dial hist expire (29.99999725s)"
+TRACE[07-21|17:57:58] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:57:58] Accepted connection                      addr=10.50.0.4:50268
+TRACE[07-21|17:57:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:57:58] Node Permissioning is Disabled. 
+TRACE[07-21|17:57:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50268 conn=inbound    err="connected to self"
+TRACE[07-21|17:57:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:57:58] Node Permissioning is Disabled. 
+TRACE[07-21|17:57:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:57:58] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:57:58] New dial task                            task="wait for dial hist expire (29.999996482s)"
+DEBUG[07-21|17:58:18] Recalculated downloader QoS values       rtt=20s confidence=0.996 ttl=1m0s
+TRACE[07-21|17:58:28] Dial task done                           task="wait for dial hist expire (29.999996482s)"
+TRACE[07-21|17:58:28] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:58:28] Accepted connection                      addr=10.50.0.4:50274
+TRACE[07-21|17:58:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:58:28] Node Permissioning is Disabled. 
+TRACE[07-21|17:58:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50274 conn=inbound    err="connected to self"
+TRACE[07-21|17:58:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:58:28] Node Permissioning is Disabled. 
+TRACE[07-21|17:58:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:58:28] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:58:28] New dial task                            task="wait for dial hist expire (29.999997573s)"
+DEBUG[07-21|17:58:38] Recalculated downloader QoS values       rtt=20s confidence=0.998 ttl=1m0s
+DEBUG[07-21|17:58:58] Recalculated downloader QoS values       rtt=20s confidence=0.999 ttl=1m0s
+TRACE[07-21|17:58:58] Dial task done                           task="wait for dial hist expire (29.999997573s)"
+TRACE[07-21|17:58:58] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:58:58] Accepted connection                      addr=10.50.0.4:50280
+TRACE[07-21|17:58:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:58:58] Node Permissioning is Disabled. 
+TRACE[07-21|17:58:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50280 conn=inbound    err="connected to self"
+TRACE[07-21|17:58:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:58:58] Node Permissioning is Disabled. 
+TRACE[07-21|17:58:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:58:58] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:58:58] New dial task                            task="wait for dial hist expire (29.999997154s)"
+DEBUG[07-21|17:59:18] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|17:59:28] Dial task done                           task="wait for dial hist expire (29.999997154s)"
+TRACE[07-21|17:59:28] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:59:28] Accepted connection                      addr=10.50.0.4:50286
+TRACE[07-21|17:59:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:59:28] Node Permissioning is Disabled. 
+TRACE[07-21|17:59:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50286 conn=inbound    err="connected to self"
+TRACE[07-21|17:59:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:59:28] Node Permissioning is Disabled. 
+TRACE[07-21|17:59:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:59:28] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:59:28] New dial task                            task="wait for dial hist expire (29.999997358s)"
+DEBUG[07-21|17:59:38] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[07-21|17:59:58] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|17:59:58] Dial task done                           task="wait for dial hist expire (29.999997358s)"
+TRACE[07-21|17:59:58] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:59:58] Accepted connection                      addr=10.50.0.4:50292
+TRACE[07-21|17:59:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:59:58] Node Permissioning is Disabled. 
+TRACE[07-21|17:59:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50292 conn=inbound    err="connected to self"
+TRACE[07-21|17:59:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|17:59:58] Node Permissioning is Disabled. 
+TRACE[07-21|17:59:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|17:59:58] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|17:59:58] New dial task                            task="wait for dial hist expire (29.999997466s)"
+DEBUG[07-21|18:00:18] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|18:00:28] Dial task done                           task="wait for dial hist expire (29.999997466s)"
+TRACE[07-21|18:00:28] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:00:28] Accepted connection                      addr=10.50.0.4:50298
+TRACE[07-21|18:00:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:00:28] Node Permissioning is Disabled. 
+TRACE[07-21|18:00:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50298 conn=inbound    err="connected to self"
+TRACE[07-21|18:00:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:00:28] Node Permissioning is Disabled. 
+TRACE[07-21|18:00:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|18:00:28] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:00:28] New dial task                            task="wait for dial hist expire (29.999996795s)"
+DEBUG[07-21|18:00:38] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[07-21|18:00:58] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|18:00:58] Dial task done                           task="wait for dial hist expire (29.999996795s)"
+TRACE[07-21|18:00:58] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:00:58] Accepted connection                      addr=10.50.0.4:50304
+TRACE[07-21|18:00:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:00:58] Node Permissioning is Disabled. 
+TRACE[07-21|18:00:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50304 conn=inbound    err="connected to self"
+TRACE[07-21|18:00:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:00:58] Node Permissioning is Disabled. 
+TRACE[07-21|18:00:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|18:00:58] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:00:58] New dial task                            task="wait for dial hist expire (29.999997229s)"
+DEBUG[07-21|18:01:18] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|18:01:28] Dial task done                           task="wait for dial hist expire (29.999997229s)"
+TRACE[07-21|18:01:28] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:01:28] Accepted connection                      addr=10.50.0.4:50310
+TRACE[07-21|18:01:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:01:28] Node Permissioning is Disabled. 
+TRACE[07-21|18:01:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50310 conn=inbound    err="connected to self"
+TRACE[07-21|18:01:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:01:28] Node Permissioning is Disabled. 
+TRACE[07-21|18:01:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|18:01:28] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:01:28] New dial task                            task="wait for dial hist expire (29.999996795s)"
+DEBUG[07-21|18:01:38] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[07-21|18:01:58] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|18:01:58] Dial task done                           task="wait for dial hist expire (29.999996795s)"
+TRACE[07-21|18:01:58] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:01:58] Accepted connection                      addr=10.50.0.4:50316
+TRACE[07-21|18:01:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:01:58] Node Permissioning is Disabled. 
+TRACE[07-21|18:01:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50316 conn=inbound    err="connected to self"
+TRACE[07-21|18:01:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:01:58] Node Permissioning is Disabled. 
+TRACE[07-21|18:01:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|18:01:58] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:01:58] New dial task                            task="wait for dial hist expire (29.999997812s)"
+DEBUG[07-21|18:02:18] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|18:02:28] Dial task done                           task="wait for dial hist expire (29.999997812s)"
+TRACE[07-21|18:02:28] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:02:28] Accepted connection                      addr=10.50.0.4:50322
+TRACE[07-21|18:02:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:02:28] Node Permissioning is Disabled. 
+TRACE[07-21|18:02:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50322 conn=inbound    err="connected to self"
+TRACE[07-21|18:02:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:02:28] Node Permissioning is Disabled. 
+TRACE[07-21|18:02:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|18:02:28] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:02:28] New dial task                            task="wait for dial hist expire (29.99999768s)"
+DEBUG[07-21|18:02:38] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[07-21|18:02:58] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|18:02:58] Dial task done                           task="wait for dial hist expire (29.99999768s)"
+TRACE[07-21|18:02:58] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:02:58] Accepted connection                      addr=10.50.0.4:50328
+TRACE[07-21|18:02:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:02:58] Node Permissioning is Disabled. 
+TRACE[07-21|18:02:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50328 conn=inbound    err="connected to self"
+TRACE[07-21|18:02:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:02:58] Node Permissioning is Disabled. 
+TRACE[07-21|18:02:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|18:02:58] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:02:58] New dial task                            task="wait for dial hist expire (29.999994806s)"
+DEBUG[07-21|18:03:18] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|18:03:28] Dial task done                           task="wait for dial hist expire (29.999994806s)"
+TRACE[07-21|18:03:28] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:03:28] Accepted connection                      addr=10.50.0.4:50334
+TRACE[07-21|18:03:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:03:28] Node Permissioning is Disabled. 
+TRACE[07-21|18:03:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50334 conn=inbound    err="connected to self"
+TRACE[07-21|18:03:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:03:28] Node Permissioning is Disabled. 
+TRACE[07-21|18:03:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|18:03:28] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:03:28] New dial task                            task="wait for dial hist expire (29.999997567s)"
+DEBUG[07-21|18:03:38] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[07-21|18:03:58] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|18:03:58] Dial task done                           task="wait for dial hist expire (29.999997567s)"
+TRACE[07-21|18:03:58] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:03:58] Accepted connection                      addr=10.50.0.4:50340
+TRACE[07-21|18:03:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:03:58] Node Permissioning is Disabled. 
+TRACE[07-21|18:03:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50340 conn=inbound    err="connected to self"
+TRACE[07-21|18:03:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:03:58] Node Permissioning is Disabled. 
+TRACE[07-21|18:03:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|18:03:58] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:03:58] New dial task                            task="wait for dial hist expire (29.99999708s)"
+DEBUG[07-21|18:04:18] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|18:04:28] Dial task done                           task="wait for dial hist expire (29.99999708s)"
+TRACE[07-21|18:04:28] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:04:28] Accepted connection                      addr=10.50.0.4:50358
+TRACE[07-21|18:04:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:04:28] Node Permissioning is Disabled. 
+TRACE[07-21|18:04:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|18:04:28] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:04:28] New dial task                            task="wait for dial hist expire (29.999996803s)"
+TRACE[07-21|18:04:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:04:28] Node Permissioning is Disabled. 
+TRACE[07-21|18:04:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50358 conn=inbound    err="connected to self"
+DEBUG[07-21|18:04:38] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[07-21|18:04:58] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|18:04:58] Dial task done                           task="wait for dial hist expire (29.999996803s)"
+TRACE[07-21|18:04:58] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:04:58] Accepted connection                      addr=10.50.0.4:50364
+TRACE[07-21|18:04:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:04:58] Node Permissioning is Disabled. 
+TRACE[07-21|18:04:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50364 conn=inbound    err="connected to self"
+TRACE[07-21|18:04:58] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:04:58] Node Permissioning is Disabled. 
+TRACE[07-21|18:04:58] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|18:04:58] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:04:58] New dial task                            task="wait for dial hist expire (29.999996898s)"
+DEBUG[07-21|18:05:18] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-21|18:05:28] Dial task done                           task="wait for dial hist expire (29.999996898s)"
+TRACE[07-21|18:05:28] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:05:28] Accepted connection                      addr=10.50.0.4:50370
+TRACE[07-21|18:05:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:05:28] Node Permissioning is Disabled. 
+TRACE[07-21|18:05:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50370 conn=inbound    err="connected to self"
+TRACE[07-21|18:05:28] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-21|18:05:28] Node Permissioning is Disabled. 
+TRACE[07-21|18:05:28] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-21|18:05:28] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-21|18:05:28] New dial task                            task="wait for dial hist expire (29.999997814s)"
+DEBUG[07-21|18:05:38] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+[*] Starting node3 node
+[*] geth --verbosity 6 --datadir qdata --raft --nodiscover --networkid 36657 --rpc --rpcaddr 0.0.0.0 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum,raft --emitcheckpoints --raftport 22003 --rpcport 22000 --port 22001 --nat extip:10.50.0.4
+TRACE[07-22|02:50:45] Started watching keystore folder         path=/node3/node/qdata/keystore
+DEBUG[07-22|02:50:45] FS scan times                            list=63.419µs set=3.909µs diff=164.167µs
+TRACE[07-22|02:50:45] Handled keystore changes                 time=55.831µs
+INFO [07-22|02:50:45] Starting peer-to-peer node               instance=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2
+INFO [07-22|02:50:45] Allocated cache and file handles         database=/node3/node/qdata/geth/chaindata cache=128 handles=1024
+DEBUG[07-22|02:50:45] FS scan times                            list=587.226µs set=5.292µs diff=6.68µs
+TRACE[07-22|02:50:45] Handled keystore changes                 time=1.169µs
+INFO [07-22|02:50:45] Initialised chain configuration          config="{ChainID: 36657 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: <nil> IsQuorum: true Engine: unknown}"
+INFO [07-22|02:50:45] Disk storage enabled for ethash caches   dir=/node3/node/qdata/geth/ethash count=3
+INFO [07-22|02:50:45] Disk storage enabled for ethash DAGs     dir=/root/.ethash                 count=2
+INFO [07-22|02:50:45] Initialising Ethereum protocol           versions="[63 62]" network=36657
+INFO [07-22|02:50:45] Loaded most recent local header          number=4 hash=899496…c1866c td=524288
+INFO [07-22|02:50:45] Loaded most recent local full block      number=4 hash=899496…c1866c td=524288
+INFO [07-22|02:50:45] Loaded most recent local fast block      number=4 hash=899496…c1866c td=524288
+DEBUG[07-22|02:50:45] Reinjecting stale transactions           count=0
+INFO [07-22|02:50:45] Loaded local transaction journal         transactions=0 dropped=0
+INFO [07-22|02:50:45] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [07-22|02:50:45] Blockchain not empty, fast sync disabled 
+DEBUG[07-22|02:50:45] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [07-22|02:50:45] Starting P2P networking 
+INFO [07-22|02:50:45] starting raft protocol handler 
+INFO [07-22|02:50:45] loaded the latest applied index          lastAppliedIndex=10
+INFO [07-22|02:50:45] loading snapshot 
+INFO [07-22|02:50:45] applying snapshot to raft storage 
+INFO [07-22|02:50:45] RLPx listener up                         self="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@[::]:22001?discport=0"
+INFO [07-22|02:50:45] updating cluster membership per raft snapshot 
+INFO [07-22|02:50:45] adding new raft peer                     raft id=1
+TRACE[07-22|02:50:45] New dial task                            task="staticdial b4572b6f876765e2 10.50.0.2:22001"
+TRACE[07-22|02:50:45] New dial task                            task="staticdial da81682458cb46e7 10.50.0.3:22001"
+TRACE[07-22|02:50:45] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+DEBUG[07-22|02:50:45] Adding static node                       node="enode://b4572b6f876765e222b7bf3db2736e61176c2d63104c165de309f48ec716365af191e5e6e860a978788259f0e8b9261a2a7584d2f810b0b2b9434c855494744f@10.50.0.2:22001?discport=0"
+2018-07-22 02:50:45.458042 I | rafthttp: starting peer 1...
+2018-07-22 02:50:45.458107 I | rafthttp: started HTTP pipelining with peer 1
+2018-07-22 02:50:45.461754 I | rafthttp: started peer 1
+2018-07-22 02:50:45.461796 I | rafthttp: added peer 1
+INFO [07-22|02:50:45] adding new raft peer                     raft id=2
+2018-07-22 02:50:45.461838 I | rafthttp: starting peer 2...
+2018-07-22 02:50:45.461851 I | rafthttp: started HTTP pipelining with peer 2
+2018-07-22 02:50:45.463918 I | rafthttp: started streaming with peer 1 (writer)
+2018-07-22 02:50:45.463979 I | rafthttp: started streaming with peer 1 (writer)
+TRACE[07-22|02:50:45] Accepted connection                      addr=10.50.0.4:50562
+2018-07-22 02:50:45.467500 I | rafthttp: started peer 2
+2018-07-22 02:50:45.467524 I | rafthttp: added peer 2
+INFO [07-22|02:50:45] updated cluster membership 
+INFO [07-22|02:50:45] blockchain is caught up; no need to synchronize 
+INFO [07-22|02:50:45] replaying WAL 
+INFO [07-22|02:50:45] loading WAL                              term=0 index=0
+INFO [07-22|02:50:45] rolling back applied index to last-durably-committed last applied index=10 last persisted index=8
+INFO [07-22|02:50:45] startRaft                                raft ID=3
+INFO [07-22|02:50:45] remounting an existing raft log; connecting to peers. 
+raft2018/07/22 02:50:45 INFO: 3 became follower at term 4
+raft2018/07/22 02:50:45 INFO: newRaft 3 [peers: [1,2,3], term: 4, commit: 8, applied: 8, lastindex: 10, lastterm: 4]
+DEBUG[07-22|02:50:45] InProc registered *node.PrivateAdminAPI under 'admin' 
+DEBUG[07-22|02:50:45] InProc registered *node.PublicAdminAPI under 'admin' 
+DEBUG[07-22|02:50:45] InProc registered *debug.HandlerT under 'debug' 
+DEBUG[07-22|02:50:45] InProc registered *node.PublicDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] InProc registered *node.PublicWeb3API under 'web3' 
+DEBUG[07-22|02:50:45] InProc registered *raft.PublicRaftAPI under 'raft' 
+DEBUG[07-22|02:50:45] InProc registered *ethapi.PublicEthereumAPI under 'eth' 
+DEBUG[07-22|02:50:45] InProc registered *ethapi.PublicBlockChainAPI under 'eth' 
+TRACE[07-22|02:50:45] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:50:45] Node Permissioning is Disabled. 
+DEBUG[07-22|02:50:45] InProc registered *ethapi.PublicTransactionPoolAPI under 'eth' 
+2018-07-22 02:50:45.468842 I | rafthttp: started streaming with peer 1 (stream MsgApp v2 reader)
+DEBUG[07-22|02:50:45] InProc registered *ethapi.PublicTxPoolAPI under 'txpool' 
+DEBUG[07-22|02:50:45] InProc registered *ethapi.PublicDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] InProc registered *ethapi.PrivateDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] InProc registered *ethapi.PublicAccountAPI under 'eth' 
+2018-07-22 02:50:45.469044 I | rafthttp: started streaming with peer 1 (stream Message reader)
+DEBUG[07-22|02:50:45] Adding static node                       node="enode://da81682458cb46e7b572446bd62921f7cdc9b16f1fa63f51891204194bc50b438b6c0340e8ea5e039656f5ddb45028d306b1609f442337c15417610c84777417@10.50.0.3:22001?discport=0"
+TRACE[07-22|02:50:45] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50562 conn=inbound err="connected to self"
+DEBUG[07-22|02:50:45] InProc registered *ethapi.PrivateAccountAPI under 'personal' 
+DEBUG[07-22|02:50:45] InProc registered *eth.PublicEthereumAPI under 'eth' 
+2018-07-22 02:50:45.469355 I | rafthttp: started streaming with peer 2 (writer)
+2018-07-22 02:50:45.469369 I | rafthttp: started streaming with peer 2 (writer)
+DEBUG[07-22|02:50:45] InProc registered *eth.PublicMinerAPI under 'eth' 
+2018-07-22 02:50:45.469398 I | rafthttp: started streaming with peer 2 (stream MsgApp v2 reader)
+DEBUG[07-22|02:50:45] InProc registered *downloader.PublicDownloaderAPI under 'eth' 
+DEBUG[07-22|02:50:45] InProc registered *eth.PrivateMinerAPI under 'miner' 
+2018-07-22 02:50:45.469542 I | rafthttp: started streaming with peer 2 (stream Message reader)
+DEBUG[07-22|02:50:45] InProc registered *filters.PublicFilterAPI under 'eth' 
+DEBUG[07-22|02:50:45] InProc registered *eth.PrivateAdminAPI under 'admin' 
+DEBUG[07-22|02:50:45] InProc registered *eth.PublicDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] InProc registered *eth.PrivateDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] InProc registered *ethapi.PublicNetAPI under 'net' 
+DEBUG[07-22|02:50:45] IPC registered *node.PrivateAdminAPI under 'admin' 
+DEBUG[07-22|02:50:45] IPC registered *node.PublicAdminAPI under 'admin' 
+DEBUG[07-22|02:50:45] IPC registered *debug.HandlerT under 'debug' 
+DEBUG[07-22|02:50:45] IPC registered *node.PublicDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] IPC registered *node.PublicWeb3API under 'web3' 
+DEBUG[07-22|02:50:45] IPC registered *raft.PublicRaftAPI under 'raft' 
+DEBUG[07-22|02:50:45] IPC registered *ethapi.PublicEthereumAPI under 'eth' 
+DEBUG[07-22|02:50:45] IPC registered *ethapi.PublicBlockChainAPI under 'eth' 
+DEBUG[07-22|02:50:45] IPC registered *ethapi.PublicTransactionPoolAPI under 'eth' 
+DEBUG[07-22|02:50:45] IPC registered *ethapi.PublicTxPoolAPI under 'txpool' 
+DEBUG[07-22|02:50:45] IPC registered *ethapi.PublicDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] IPC registered *ethapi.PrivateDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] IPC registered *ethapi.PublicAccountAPI under 'eth' 
+DEBUG[07-22|02:50:45] IPC registered *ethapi.PrivateAccountAPI under 'personal' 
+DEBUG[07-22|02:50:45] IPC registered *eth.PublicEthereumAPI under 'eth' 
+DEBUG[07-22|02:50:45] IPC registered *eth.PublicMinerAPI under 'eth' 
+DEBUG[07-22|02:50:45] IPC registered *downloader.PublicDownloaderAPI under 'eth' 
+DEBUG[07-22|02:50:45] IPC registered *eth.PrivateMinerAPI under 'miner' 
+DEBUG[07-22|02:50:45] IPC registered *filters.PublicFilterAPI under 'eth' 
+DEBUG[07-22|02:50:45] IPC registered *eth.PrivateAdminAPI under 'admin' 
+DEBUG[07-22|02:50:45] IPC registered *eth.PublicDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] IPC registered *eth.PrivateDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] IPC registered *ethapi.PublicNetAPI under 'net' 
+DEBUG[07-22|02:50:45] HTTP registered *node.PrivateAdminAPI under 'admin' 
+DEBUG[07-22|02:50:45] HTTP registered *node.PublicAdminAPI under 'admin' 
+DEBUG[07-22|02:50:45] HTTP registered *debug.HandlerT under 'debug' 
+DEBUG[07-22|02:50:45] HTTP registered *node.PublicDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] HTTP registered *node.PublicWeb3API under 'web3' 
+DEBUG[07-22|02:50:45] HTTP registered *raft.PublicRaftAPI under 'raft' 
+DEBUG[07-22|02:50:45] HTTP registered *ethapi.PublicEthereumAPI under 'eth' 
+DEBUG[07-22|02:50:45] HTTP registered *ethapi.PublicBlockChainAPI under 'eth' 
+DEBUG[07-22|02:50:45] HTTP registered *ethapi.PublicTransactionPoolAPI under 'eth' 
+DEBUG[07-22|02:50:45] Executing EVM call finished              runtime=242.574µs
+DEBUG[07-22|02:50:45] Release oracle not found                 contract=0xFA7B9770Ca4cb04296Cac84F37736d4041251CDF
+TRACE[07-22|02:50:45] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:50:45] Node Permissioning is Disabled. 
+TRACE[07-22|02:50:45] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-22|02:50:45] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+DEBUG[07-22|02:50:45] HTTP registered *ethapi.PublicTxPoolAPI under 'txpool' 
+DEBUG[07-22|02:50:45] HTTP registered *ethapi.PublicDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] HTTP registered *ethapi.PrivateDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] HTTP registered *ethapi.PublicAccountAPI under 'eth' 
+DEBUG[07-22|02:50:45] HTTP registered *ethapi.PrivateAccountAPI under 'personal' 
+DEBUG[07-22|02:50:45] HTTP registered *eth.PublicEthereumAPI under 'eth' 
+DEBUG[07-22|02:50:45] HTTP registered *eth.PublicMinerAPI under 'eth' 
+DEBUG[07-22|02:50:45] HTTP registered *downloader.PublicDownloaderAPI under 'eth' 
+DEBUG[07-22|02:50:45] HTTP registered *eth.PrivateMinerAPI under 'miner' 
+2018-07-22 02:50:45.477977 I | rafthttp: peer 1 became active
+2018-07-22 02:50:45.479958 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 reader)
+2018-07-22 02:50:45.481478 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message reader)
+2018-07-22 02:50:45.481516 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message writer)
+2018-07-22 02:50:45.481526 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 writer)
+2018-07-22 02:50:45.481531 I | rafthttp: peer 2 became active
+2018-07-22 02:50:45.481536 I | rafthttp: established a TCP streaming connection with peer 2 (stream MsgApp v2 reader)
+2018-07-22 02:50:45.481614 I | rafthttp: established a TCP streaming connection with peer 2 (stream Message reader)
+DEBUG[07-22|02:50:45] HTTP registered *filters.PublicFilterAPI under 'eth' 
+TRACE[07-22|02:50:45] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://b4572b6f876765e222b7bf3db2736e61176c2d63104c165de309f48ec716365af191e5e6e860a978788259f0e8b9261a2a7584d2f810b0b2b9434c855494744f@10.50.0.2:22001?discport=0&raftport=22003" Connection ID=b4572b6f876765e2 Connection String=b4572b6f876765e222b7bf3db2736e61176c2d63104c165de309f48ec716365af191e5e6e860a978788259f0e8b9261a2a7584d2f810b0b2b9434c855494744f
+TRACE[07-22|02:50:45] Node Permissioning is Disabled. 
+DEBUG[07-22|02:50:45] Adding p2p peer                          id=b4572b6f876765e2 name=Geth/v1.7.2-stable-d... addr=10.50.0.2:22001 peers=1
+TRACE[07-22|02:50:45] Dial task done                           task="staticdial b4572b6f876765e2 10.50.0.2:22001"
+INFO [07-22|02:50:45] IPC endpoint opened: /node3/node/qdata/geth.ipc 
+TRACE[07-22|02:50:45] Starting protocol eth/63                 id=b4572b6f876765e2 conn=staticdial
+DEBUG[07-22|02:50:45] Ethereum peer connected                  id=b4572b6f876765e2 conn=staticdial name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2
+TRACE[07-22|02:50:45] Registering sync peer                    peer=b4572b6f876765e2
+DEBUG[07-22|02:50:45] HTTP registered *eth.PrivateAdminAPI under 'admin' 
+DEBUG[07-22|02:50:45] HTTP registered *eth.PublicDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] HTTP registered *eth.PrivateDebugAPI under 'debug' 
+DEBUG[07-22|02:50:45] HTTP registered *ethapi.PublicNetAPI under 'net' 
+INFO [07-22|02:50:45] HTTP endpoint opened: http://0.0.0.0:22000 
+DEBUG[07-22|02:50:45] Allowed origin(s) for WS RPC interface [*]
+ 
+INFO [07-22|02:50:45] WebSocket endpoint opened: ws://[::]:22005 
+TRACE[07-22|02:50:45] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://da81682458cb46e7b572446bd62921f7cdc9b16f1fa63f51891204194bc50b438b6c0340e8ea5e039656f5ddb45028d306b1609f442337c15417610c84777417@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=da81682458cb46e7 Connection String=da81682458cb46e7b572446bd62921f7cdc9b16f1fa63f51891204194bc50b438b6c0340e8ea5e039656f5ddb45028d306b1609f442337c15417610c84777417
+TRACE[07-22|02:50:45] Node Permissioning is Disabled. 
+DEBUG[07-22|02:50:45] Adding p2p peer                          id=da81682458cb46e7 name=Geth/v1.7.2-stable-d...                          addr=10.50.0.3:22001 peers=2
+TRACE[07-22|02:50:45] Dial task done                           task="staticdial da81682458cb46e7 10.50.0.3:22001"
+TRACE[07-22|02:50:45] New dial task                            task="wait for dial hist expire (29.990079647s)"
+TRACE[07-22|02:50:45] Starting protocol eth/63                 id=da81682458cb46e7 conn=staticdial
+DEBUG[07-22|02:50:45] Ethereum peer connected                  id=da81682458cb46e7 conn=staticdial name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2
+TRACE[07-22|02:50:45] Registering sync peer                    peer=da81682458cb46e7
+DEBUG[07-22|02:50:45] Relaxed downloader QoS values            rtt=20s confidence=0.500 ttl=1m0s
+2018-07-22 02:50:45.506671 I | rafthttp: established a TCP streaming connection with peer 2 (stream Message writer)
+2018-07-22 02:50:45.508305 I | rafthttp: established a TCP streaming connection with peer 2 (stream MsgApp v2 writer)
+raft2018/07/22 02:50:45 INFO: 3 [term: 4] received a MsgHeartbeat message with higher term from 1 [term: 5]
+raft2018/07/22 02:50:45 INFO: 3 became follower at term 5
+raft2018/07/22 02:50:45 INFO: raft.node: 3 elected leader 1 at term 5
+INFO [07-22|02:50:45] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+INFO [07-22|02:50:45] persisted the latest applied index       index=11
+DEBUG[07-22|02:50:47] Couldn't add port mapping                proto=tcp extport=22001 intport=22001 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
+DEBUG[07-22|02:51:05] Recalculated downloader QoS values       rtt=20s confidence=0.750 ttl=1m0s
+TRACE[07-22|02:51:15] Dial task done                           task="wait for dial hist expire (29.990079647s)"
+TRACE[07-22|02:51:15] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:51:15] Accepted connection                      addr=10.50.0.4:50604
+TRACE[07-22|02:51:15] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:51:15] Node Permissioning is Disabled. 
+TRACE[07-22|02:51:15] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50604 conn=inbound    err="connected to self"
+TRACE[07-22|02:51:15] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:51:15] Node Permissioning is Disabled. 
+TRACE[07-22|02:51:15] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-22|02:51:15] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:51:15] New dial task                            task="wait for dial hist expire (1.695445ms)"
+TRACE[07-22|02:51:15] Dial task done                           task="wait for dial hist expire (1.695445ms)"
+TRACE[07-22|02:51:15] New dial task                            task="wait for dial hist expire (29.997775053s)"
+DEBUG[07-22|02:51:25] Recalculated downloader QoS values       rtt=20s confidence=0.875 ttl=1m0s
+DEBUG[07-22|02:51:45] Recalculated downloader QoS values       rtt=20s confidence=0.938 ttl=1m0s
+TRACE[07-22|02:51:45] Dial task done                           task="wait for dial hist expire (29.997775053s)"
+TRACE[07-22|02:51:45] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:51:45] Accepted connection                      addr=10.50.0.4:50614
+TRACE[07-22|02:51:45] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:51:45] Node Permissioning is Disabled. 
+TRACE[07-22|02:51:45] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50614 conn=inbound    err="connected to self"
+TRACE[07-22|02:51:45] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:51:45] Node Permissioning is Disabled. 
+TRACE[07-22|02:51:45] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-22|02:51:45] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:51:45] New dial task                            task="wait for dial hist expire (29.999996939s)"
+DEBUG[07-22|02:52:05] Recalculated downloader QoS values       rtt=20s confidence=0.969 ttl=1m0s
+TRACE[07-22|02:52:15] Dial task done                           task="wait for dial hist expire (29.999996939s)"
+TRACE[07-22|02:52:15] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:52:15] Accepted connection                      addr=10.50.0.4:50620
+TRACE[07-22|02:52:15] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:52:15] Node Permissioning is Disabled. 
+TRACE[07-22|02:52:15] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50620 conn=inbound    err="connected to self"
+TRACE[07-22|02:52:15] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:52:15] Node Permissioning is Disabled. 
+TRACE[07-22|02:52:15] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-22|02:52:15] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:52:15] New dial task                            task="wait for dial hist expire (29.999996983s)"
+DEBUG[07-22|02:52:25] Recalculated downloader QoS values       rtt=20s confidence=0.984 ttl=1m0s
+DEBUG[07-22|02:52:45] Recalculated downloader QoS values       rtt=20s confidence=0.992 ttl=1m0s
+TRACE[07-22|02:52:45] Dial task done                           task="wait for dial hist expire (29.999996983s)"
+TRACE[07-22|02:52:45] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:52:45] Accepted connection                      addr=10.50.0.4:50626
+TRACE[07-22|02:52:45] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:52:45] Node Permissioning is Disabled. 
+TRACE[07-22|02:52:45] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50626 conn=inbound    err="connected to self"
+TRACE[07-22|02:52:45] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:52:45] Node Permissioning is Disabled. 
+TRACE[07-22|02:52:45] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-22|02:52:45] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:52:45] New dial task                            task="wait for dial hist expire (29.999997265s)"
+DEBUG[07-22|02:53:05] Recalculated downloader QoS values       rtt=20s confidence=0.996 ttl=1m0s
+TRACE[07-22|02:53:15] Dial task done                           task="wait for dial hist expire (29.999997265s)"
+TRACE[07-22|02:53:15] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:53:15] Accepted connection                      addr=10.50.0.4:50632
+TRACE[07-22|02:53:15] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:53:15] Node Permissioning is Disabled. 
+TRACE[07-22|02:53:15] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50632 conn=inbound    err="connected to self"
+TRACE[07-22|02:53:15] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:53:15] Node Permissioning is Disabled. 
+TRACE[07-22|02:53:15] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-22|02:53:15] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:53:15] New dial task                            task="wait for dial hist expire (29.999995145s)"
+DEBUG[07-22|02:53:25] Recalculated downloader QoS values       rtt=20s confidence=0.998 ttl=1m0s
+DEBUG[07-22|02:53:45] Recalculated downloader QoS values       rtt=20s confidence=0.999 ttl=1m0s
+TRACE[07-22|02:53:45] Dial task done                           task="wait for dial hist expire (29.999995145s)"
+TRACE[07-22|02:53:45] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:53:45] Accepted connection                      addr=10.50.0.4:50638
+TRACE[07-22|02:53:45] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:53:45] Node Permissioning is Disabled. 
+TRACE[07-22|02:53:45] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50638 conn=inbound    err="connected to self"
+TRACE[07-22|02:53:45] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:53:45] Node Permissioning is Disabled. 
+TRACE[07-22|02:53:45] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-22|02:53:45] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:53:45] New dial task                            task="wait for dial hist expire (29.999997607s)"
+DEBUG[07-22|02:54:05] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-22|02:54:15] Dial task done                           task="wait for dial hist expire (29.999997607s)"
+TRACE[07-22|02:54:15] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:54:15] Accepted connection                      addr=10.50.0.4:50644
+TRACE[07-22|02:54:15] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:54:15] Node Permissioning is Disabled. 
+TRACE[07-22|02:54:15] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50644 conn=inbound    err="connected to self"
+TRACE[07-22|02:54:15] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:54:15] Node Permissioning is Disabled. 
+TRACE[07-22|02:54:15] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-22|02:54:15] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:54:15] New dial task                            task="wait for dial hist expire (29.999996719s)"
+DEBUG[07-22|02:54:25] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[07-22|02:54:45] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-22|02:54:45] Dial task done                           task="wait for dial hist expire (29.999996719s)"
+TRACE[07-22|02:54:45] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:54:45] Accepted connection                      addr=10.50.0.4:50650
+TRACE[07-22|02:54:45] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:54:45] Node Permissioning is Disabled. 
+TRACE[07-22|02:54:45] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50650 conn=inbound    err="connected to self"
+TRACE[07-22|02:54:45] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:54:45] Node Permissioning is Disabled. 
+TRACE[07-22|02:54:45] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-22|02:54:45] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:54:45] New dial task                            task="wait for dial hist expire (29.999996514s)"
+DEBUG[07-22|02:55:05] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[07-22|02:55:15] Dial task done                           task="wait for dial hist expire (29.999996514s)"
+TRACE[07-22|02:55:15] New dial task                            task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:55:15] Accepted connection                      addr=10.50.0.4:50656
+TRACE[07-22|02:55:15] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:55:15] Node Permissioning is Disabled. 
+TRACE[07-22|02:55:15] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:50656 conn=inbound    err="connected to self"
+TRACE[07-22|02:55:15] Quorum permissioning                     EnableNodePermission=false DataDir=/node3/node/qdata Current Node ID=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad Node Name=Geth/v1.7.2-stable-df4267a2/linux-amd64/go1.10.2 Dialed Dest="enode://bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=bff880aa47860477 Connection String=bff880aa4786047718be94b4e51cbb4f908037549d839bbf6087f7707c2f5c7d02244ac923821d7b594f59700e5cbac85e2c19af85bc65f39387897b546b89ad
+TRACE[07-22|02:55:15] Node Permissioning is Disabled. 
+TRACE[07-22|02:55:15] Rejected peer before protocol handshake  id=bff880aa47860477 addr=10.50.0.4:22001 conn=staticdial err="connected to self"
+TRACE[07-22|02:55:15] Dial task done                           task="staticdial bff880aa47860477 10.50.0.4:22001"
+TRACE[07-22|02:55:15] New dial task                            task="wait for dial hist expire (29.999996426s)"
+DEBUG[07-22|02:55:25] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s

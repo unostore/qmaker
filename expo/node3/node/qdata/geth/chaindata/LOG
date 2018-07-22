@@ -1,0 +1,36 @@
+=============== Jul 21, 2018 (UTC) ===============
+17:46:50.297234 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:46:50.298896 db@open opening
+17:46:50.299340 version@stat F·[] S·0B[] Sc·[]
+17:46:50.300279 db@janitor F·2 G·0
+17:46:50.300333 db@open done T·1.405978ms
+=============== Jul 21, 2018 (UTC) ===============
+17:47:17.959286 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:47:17.959665 version@stat F·[] S·0B[] Sc·[]
+17:47:17.959679 db@open opening
+17:47:17.959779 journal@recovery F·1
+17:47:17.964632 journal@recovery recovering @1
+17:47:17.966378 memdb@flush created L0@2 N·16 S·1KiB "HJd..M\x0eF,v10":"\xc4ђ..\xf0\xfe\x82,v7"
+17:47:17.967338 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+17:47:17.969101 db@janitor F·3 G·0
+17:47:17.969122 db@open done T·9.43514ms
+=============== Jul 21, 2018 (UTC) ===============
+17:55:58.525148 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:55:58.525298 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+17:55:58.525309 db@open opening
+17:55:58.525403 journal@recovery F·1
+17:55:58.528104 journal@recovery recovering @3
+17:55:58.530648 memdb@flush created L0@5 N·174 S·20KiB "\x00\x17]..\xcf/\xca,v132":"\xff\x11\xc0..7=\x91,v66"
+17:55:58.531635 version@stat F·[2] S·21KiB[21KiB] Sc·[0.50]
+17:55:58.533483 db@janitor F·4 G·0
+17:55:58.533506 db@open done T·8.157919ms
+=============== Jul 22, 2018 (UTC) ===============
+02:50:45.435639 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+02:50:45.435805 version@stat F·[2] S·21KiB[21KiB] Sc·[0.50]
+02:50:45.435816 db@open opening
+02:50:45.435875 journal@recovery F·1
+02:50:45.436730 journal@recovery recovering @6
+02:50:45.438352 memdb@flush created L0@8 N·2 S·243B "Blo..ion,v193":"Las..der,v194"
+02:50:45.440441 version@stat F·[3] S·21KiB[21KiB] Sc·[0.75]
+02:50:45.441918 db@janitor F·5 G·0
+02:50:45.441947 db@open done T·6.125583ms

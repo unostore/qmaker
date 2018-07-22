@@ -1,0 +1,36 @@
+=============== Jul 21, 2018 (UTC) ===============
+17:46:50.245558 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:46:50.247546 db@open opening
+17:46:50.248025 version@stat F·[] S·0B[] Sc·[]
+17:46:50.248976 db@janitor F·2 G·0
+17:46:50.249004 db@open done T·1.441007ms
+=============== Jul 21, 2018 (UTC) ===============
+17:47:17.883765 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:47:17.883929 version@stat F·[] S·0B[] Sc·[]
+17:47:17.883939 db@open opening
+17:47:17.883987 journal@recovery F·1
+17:47:17.888634 journal@recovery recovering @1
+17:47:17.893899 memdb@flush created L0@2 N·16 S·1KiB "HJd..M\x0eF,v10":"\xc4ђ..\xf0\xfe\x82,v7"
+17:47:17.897947 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+17:47:17.903502 db@janitor F·3 G·0
+17:47:17.903524 db@open done T·19.577991ms
+=============== Jul 21, 2018 (UTC) ===============
+17:55:59.483603 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:55:59.483812 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+17:55:59.483830 db@open opening
+17:55:59.483887 journal@recovery F·1
+17:55:59.484891 journal@recovery recovering @3
+17:55:59.488873 memdb@flush created L0@5 N·220 S·23KiB "\x00\x17]..\xcf/\xca,v178":"\xff\x11\xc0..7=\x91,v69"
+17:55:59.489916 version@stat F·[2] S·24KiB[24KiB] Sc·[0.50]
+17:55:59.491663 db@janitor F·4 G·0
+17:55:59.491680 db@open done T·7.843168ms
+=============== Jul 22, 2018 (UTC) ===============
+02:50:44.445298 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+02:50:44.445485 version@stat F·[2] S·24KiB[24KiB] Sc·[0.50]
+02:50:44.445497 db@open opening
+02:50:44.445557 journal@recovery F·1
+02:50:44.446478 journal@recovery recovering @6
+02:50:44.448009 memdb@flush created L0@8 N·2 S·243B "Blo..ion,v239":"Las..der,v240"
+02:50:44.453623 version@stat F·[3] S·24KiB[24KiB] Sc·[0.75]
+02:50:44.456833 db@janitor F·5 G·0
+02:50:44.456857 db@open done T·11.352618ms
